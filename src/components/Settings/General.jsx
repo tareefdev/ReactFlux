@@ -8,6 +8,7 @@ import { settingsState, updateSettings } from "@/store/settingsState"
 
 const languageOptions = [
   { label: "Deutsch", value: "de-DE" },
+  { label: "العربية", value: "ar-EG" },
   { label: "English", value: "en-US" },
   { label: "Español", value: "es-ES" },
   { label: "Français", value: "fr-FR" },

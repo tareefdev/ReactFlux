@@ -1,5 +1,6 @@
 import { ConfigProvider } from "@arco-design/web-react"
 import "@arco-design/web-react/dist/css/arco.css"
+import arEG from "@arco-design/web-react/es/locale/ar-EG"
 import deDE from "@arco-design/web-react/es/locale/de-DE"
 import enUS from "@arco-design/web-react/es/locale/en-US"
 import esES from "@arco-design/web-react/es/locale/es-ES"
@@ -18,6 +19,7 @@ import "./theme.css"
 import { getPreferredLanguage } from "./utils/locales"
 
 const localMap = {
+  "ar-EG": arEG,
   "de-DE": deDE,
   "es-ES": esES,
   "fr-FR": frFR,
@@ -25,12 +27,13 @@ const localMap = {
 }
 
 const getLocale = () => localMap[getPreferredLanguage()] || enUS
+const rtl = getLocale().locale === "ar-EG" ? true : false
 
 registerSW({ immediate: true })
 registerLanguages()
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ConfigProvider locale={getLocale()}>
+  <ConfigProvider locale={getLocale()} rtl={rtl}>
     <RouterProvider router={router} />
   </ConfigProvider>,
 )

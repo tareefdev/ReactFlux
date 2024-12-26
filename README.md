@@ -31,7 +31,7 @@ Key features include:
   - Batch update the host of filtered subscription URLs (useful for replacing RSSHub instances)
   - Batch refresh errored subscriptions
   - Save articles to third-party services
-- I18n supports (Deutsch / English / Español / Français / 简体中文)
+- I18n supports (Deutsch / English / Español / Français / 简体中文 / العربية)
 - Other features waiting for you to discover...
 
 ## Online Demo & Screenshots
@@ -111,6 +111,7 @@ For detailed changes, please refer to the modifications in [PR #145](https://git
 | Español  | [Victorhck](https://github.com/victorhck)       |
 | Français | [MickGe](https://github.com/MickGe)             |
 | 简体中文 | [Neko Aria](https://github.com/NekoAria)        |
+| العربية  | [Tareef Mando](https://github.com/tareefdev)    |
 
 ## Contributors
 
