@@ -17,7 +17,7 @@ import createSetter from "@/utils/nanostores"
 const languageToLocale = {
   "zh-CN": "zh-cn",
   de: "de",
-  ar: "AR",
+  ar: "ar",
   es: "es",
   fr: "fr",
 }
